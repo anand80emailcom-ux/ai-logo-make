@@ -1,0 +1,22 @@
+import React from 'react';
+
+interface AdUnitProps {
+  slot: string;
+  className?: string;
+}
+
+export const AdUnit: React.FC<AdUnitProps> = ({ slot, className = "" }) => {
+  return (
+    <div className={`bg-slate-50 border border-dashed border-slate-200 rounded-2xl flex items-center justify-center p-2 min-h-[100px] overflow-hidden ${className}`}>
+      <div className="text-[10px] font-bold text-slate-300 uppercase tracking-widest text-center">
+        Advertisement
+        <ins className="adsbygoogle"
+             style={{ display: 'block' }}
+             data-ad-client="ca-pub-0000000000000000"
+             data-ad-slot={slot}
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+      </div>
+    </div>
+  );
+};

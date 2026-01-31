@@ -1,0 +1,33 @@
+
+import React from 'react';
+import { APP_NAME } from '../constants';
+
+export const Header: React.FC = () => {
+  return (
+    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-slate-100">
+      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 logo-gradient rounded-[12px] flex items-center justify-center text-white font-black text-xl shadow-xl shadow-indigo-100">
+            A
+          </div>
+          <span className="text-2xl font-black tracking-tighter text-slate-900">
+            {APP_NAME} <span className="text-indigo-600">PRO</span>
+          </span>
+        </div>
+        
+        <nav className="hidden lg:flex items-center gap-10">
+          <a href="#" className="text-sm font-bold text-slate-500 hover:text-indigo-600 transition-colors uppercase tracking-widest">Pricing</a>
+          <a href="#" className="text-sm font-bold text-slate-500 hover:text-indigo-600 transition-colors uppercase tracking-widest">Library</a>
+          <a href="#" className="text-sm font-bold text-slate-500 hover:text-indigo-600 transition-colors uppercase tracking-widest">Api</a>
+        </nav>
+
+        <div className="flex items-center gap-6">
+          <button className="hidden sm:block text-sm font-black text-slate-400 hover:text-slate-900 transition-all uppercase tracking-widest">Log In</button>
+          <button className="bg-slate-900 text-white px-8 py-3.5 rounded-2xl text-xs font-black uppercase tracking-widest hover:bg-black transition-all shadow-xl shadow-slate-200">
+            Create Free
+          </button>
+        </div>
+      </div>
+    </header>
+  );
+};
