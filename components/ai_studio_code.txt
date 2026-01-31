@@ -1,0 +1,15 @@
+📁 my-ai-logo-app (Main Folder)
+├── 📁 components/
+│   ├── Header.tsx
+│   └── AdUnit.tsx
+├── 📁 services/
+│   └── geminiService.ts
+├── App.tsx
+├── constants.ts
+├── types.ts
+├── index.tsx
+├── index.html
+├── package.json
+├── metadata.json
+├── ads.txt
+└── README.md
